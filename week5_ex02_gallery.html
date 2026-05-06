@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="week5_ex02_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Gallery</h1>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+        <button class="filter-btn" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" data-filter="architecture">
+          Architecture
+        </button>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="gallery-grid">
+        <!-- Landscapes -->
+        <div class="gallery-card" data-category="landscapes">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+              alt="Mountain Lake"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Mountain lake above the clouds, captured at golden hour.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Mountain Reflection</h3>
+            <span class="category-tag">Landscapes</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="landscapes">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=300&fit=crop"
+              alt="Green Valley"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Lush green valley surrounded by towering mountains.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Green Valley</h3>
+            <span class="category-tag">Landscapes</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="landscapes">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop"
+              alt="Waterfall"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Majestic waterfall cascading through a lush forest.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Forest Falls</h3>
+            <span class="category-tag">Landscapes</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="landscapes">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
+              alt="Ocean Sunset"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Clear water lake surrounded by scenic mountains.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Ocean Sunset</h3>
+            <span class="category-tag">Landscapes</span>
+          </div>
+        </div>
+
+        <!-- Portraits -->
+        <div class="gallery-card" data-category="portraits">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=300&fit=crop"
+              alt="Portrait 1"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Natural smile captured in a candid moment.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Natural Smile</h3>
+            <span class="category-tag">Portraits</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="portraits">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+              alt="Portrait 2"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Studio portrait with dramatic lighting & shadows.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Dramatic Light</h3>
+            <span class="category-tag">Portraits</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="portraits">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop"
+              alt="Portrait 3"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Outdoor portrait with soft bokeh background.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Soft Focus</h3>
+            <span class="category-tag">Portraits</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="portraits">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop"
+              alt="Portrait 4"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Candid street portrait capturing urban personality.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Urban Character</h3>
+            <span class="category-tag">Portraits</span>
+          </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="gallery-card" data-category="architecture">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&h=300&fit=crop"
+              alt="Modern Building"
+            />
+            <div class="card-overlay">
+              <p class="description">A shot of the city skyline at dusk.</p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">City Skyline</h3>
+            <span class="category-tag">Architecture</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="architecture">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&h=300&fit=crop"
+              alt="Curved Building"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Glasslike buildings reflecting the city lights.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Glasslike Buildings</h3>
+            <span class="category-tag">Architecture</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="architecture">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=400&h=300&fit=crop"
+              alt="Bridge"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                A confusing perspective of the city's architecture.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Confused View</h3>
+            <span class="category-tag">Architecture</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="architecture">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=300&fit=crop"
+              alt="Concrete Structure"
+            />
+            <div class="card-overlay">
+              <p class="description">
+                Aesthetic appreciation of architectural design.
+              </p>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Beauty in Architecture</h3>
+            <span class="category-tag">Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Filter functionality
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const galleryCards = document.querySelectorAll(".gallery-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          // Add active class to clicked button
+          button.classList.add("active");
+
+          const filterValue = button.getAttribute("data-filter");
+
+          galleryCards.forEach((card) => {
+            if (
+              filterValue === "all" ||
+              card.getAttribute("data-category") === filterValue
+            ) {
+              card.classList.remove("hidden");
+              card.classList.add("visible");
+            } else {
+              card.classList.remove("visible");
+              card.classList.add("hidden");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
