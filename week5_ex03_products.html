@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="week5_ex03_style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">KaizenWare</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Kaizen's Products</h1>
+        <p>Quality you can trust</p>
+        <a href="#products" class="btn-pulse">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <h2>Featured Products</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img">
+            <span class="icon">🎧</span>
+            <div class="overlay">
+              <button>View</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Headphones</h3>
+            <p class="price">R5,499</p>
+            <p>Wireless audio</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <span class="icon">⌚</span>
+            <div class="overlay">
+              <button>View</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Smart Watch</h3>
+            <p class="price">R8,249</p>
+            <p>Health tracking</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <span class="icon">📷</span>
+            <div class="overlay">
+              <button>View</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Camera Lens</h3>
+            <p class="price">R16,499</p>
+            <p>Pro photography</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <span class="icon">💻</span>
+            <div class="overlay">
+              <button>View</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Ultra Laptop</h3>
+            <p class="price">R23,849</p>
+            <p>Powerful & slim</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <span class="icon">🎮</span>
+            <div class="overlay">
+              <button>View</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Gaming Console</h3>
+            <p class="price">R9,174</p>
+            <p>Next-gen gaming</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <span class="icon">🔊</span>
+            <div class="overlay">
+              <button>View</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Smart Speaker</h3>
+            <p class="price">R3,666</p>
+            <p>Voice control</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>Why Choose Us?</h2>
+      <div class="features">
+        <div class="feature-box">
+          <span class="feature-icon">🚀</span>
+          <h3>Fast Shipping</h3>
+          <p>2-3 day delivery</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">🛡️</span>
+          <h3>Secure Payment</h3>
+          <p>100% safe checkout</p>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">↩️</span>
+          <h3>Easy Returns</h3>
+          <p>30-day guarantee</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <p>&copy; 2026 KaizenWare</p>
+      <div class="socials">
+        <a href="#">FB</a>
+        <a href="#">TW</a>
+        <a href="#">IG</a>
+      </div>
+    </footer>
+
+    <script>
+      // Hide loader after 2 seconds
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").classList.add("hide");
+        }, 2000);
+      });
+
+      // Slide-in animation on scroll
+      const cards = document.querySelectorAll(".card");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+
+      cards.forEach((card) => observer.observe(card));
+    </script>
+  </body>
+</html>
