@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="week5_ex04_index.html">TechStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="week5_ex04_index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="week5_ex04_products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="week5_ex04_about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="week5_ex04_contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 bg-primary" style="height: 400px;">
+                    <div class="d-flex align-items-center justify-content-center h-100 text-white">
+                        <div class="text-center animate__animated animate__fadeInDown">
+                            <h1>Welcome to TechStore</h1>
+                            <p class="lead">Your one-stop shop for premium electronics</p>
+                            <a href="week5_ex04_products.html" class="btn btn-light btn-lg mt-3">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 bg-success" style="height: 400px;">
+                    <div class="d-flex align-items-center justify-content-center h-100 text-white">
+                        <div class="text-center animate__animated animate__fadeInUp">
+                            <h1>Latest Gadgets</h1>
+                            <p class="lead">Discover cutting-edge technology</p>
+                            <a href="week5_ex04_products.html" class="btn btn-light btn-lg mt-3">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 bg-info" style="height: 400px;">
+                    <div class="d-flex align-items-center justify-content-center h-100 text-white">
+                        <div class="text-center animate__animated animate__zoomIn">
+                            <h1>Best Deals</h1>
+                            <p class="lead">Unbeatable prices on top brands</p>
+                            <a href="week5_ex04_products.html" class="btn btn-light btn-lg mt-3">View Deals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 animate__animated animate__fadeIn">Featured Categories</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInLeft">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptops</h5>
+                        <p class="card-text">Powerful machines for work and play.</p>
+                        <a href="week5_ex04_products.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphones</h5>
+                        <p class="card-text">Stay connected with the latest phones.</p>
+                        <a href="week5_ex04_products.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInRight">
+                    <div class="card-body">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text">Enhance your tech experience.</p>
+                        <a href="week5_ex04_products.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert -->
+    <div class="container mb-5">
+        <div class="alert alert-info animate__animated animate__pulse" role="alert">
+            <strong>New Arrivals!</strong> Check out our latest products in the store. Free shipping on orders over $50!
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 TechStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
